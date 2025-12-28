@@ -1,12 +1,16 @@
+import Hero from '../components/home/Hero'
+import ProjectsSection from '../components/home/ProjectsSection'
+import SkillsSection from '../components/home/SkillsSection'
+import ContactSection from '../components/home/ContactSection'
+import './Home.css'
+
 function Home() {
   return (
     <div className="home">
-      <section className="hero container">
-        <h1 className="animate-fade-in">George Sheppard</h1>
-        <p className="animate-fade-in stagger-1">Software Engineer</p>
-      </section>
-
-      {/* Additional sections will be added in Phase 4 */}
+      <Hero />
+      <ProjectsSection />
+      <SkillsSection />
+      <ContactSection />
     </div>
   )
 }

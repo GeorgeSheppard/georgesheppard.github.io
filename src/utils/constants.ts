@@ -1,0 +1,183 @@
+// All site content - single source of truth
+
+export const PERSONAL_INFO = {
+  name: 'George Sheppard',
+  title: 'Software Engineer',
+  company: 'Spotify',
+  location: 'London, UK',
+  email: 'georgesheppard98@gmail.com',
+  phone: '+447956731633',
+  bio: [
+    'Software Engineer at Spotify with a passion for building intuitive user experiences and robust systems. I specialize in full-stack development with TypeScript, React, and Node.js.',
+    'I hold an MSc in Robotics from the University of Birmingham (84%, distinction with honours), where I designed and built a SCARA robotic arm that plays Gomoku using computer vision and AI. My background in Physics (BSc, first-class honours) gives me a strong foundation in problem-solving and analytical thinking.'
+  ]
+}
+
+export const SOCIAL_LINKS = [
+  {
+    name: 'GitHub',
+    url: 'https://github.com/GeorgeSheppard',
+    icon: 'github'
+  },
+  {
+    name: 'LinkedIn',
+    url: 'https://linkedin.com/in/georgesheppard/',
+    icon: 'linkedin'
+  },
+  {
+    name: 'Email',
+    url: 'mailto:georgesheppard98@gmail.com',
+    icon: 'email'
+  }
+]
+
+export const PROJECTS = [
+  {
+    id: 'shelfie',
+    title: 'Shelfie',
+    description: 'A website that takes a picture of your bookshelf (a "Shelfie") and recommends new books based on what you already own. This self-hosted project combines computer vision with AI to provide personalized reading suggestions.',
+    technologies: ['Docker', 'Nginx', 'TypeScript', '.NET', 'SQL', 'RabbitMQ', 'Python', 'OpenAI'],
+    github: '',
+    demo: '',
+    featured: true
+  },
+  {
+    id: 'quick-ai',
+    title: 'Quick AI',
+    description: 'A desktop client for interacting with AI models. Quick AI is accessible via OS shortcut and allows users to quickly interact with their favourite foundation models across text, image, and audio. Provider agnostic design enables unified access to any AI provider.',
+    technologies: ['Rust', 'TypeScript', 'Tauri', 'OpenAI', 'Desktop'],
+    github: '',
+    demo: '',
+    featured: true
+  },
+  {
+    id: 'kitchen-calm',
+    title: 'Kitchen Calm',
+    description: 'A recipe management website that helps anyone keep organised in the kitchen. Features include meal planning, shopping list creation, AI-powered recipe upload, and shareable recipes.',
+    technologies: ['AWS DynamoDB', 'AWS Cognito', 'AWS S3', 'TypeScript', 'OpenAI', 'Vercel', 'React'],
+    github: '',
+    demo: '',
+    featured: true
+  },
+  {
+    id: 'gomoku-robot',
+    title: 'Gomoku Playing Robot (MSc Dissertation)',
+    description: 'A SCARA-style robotic arm that plays the board game Gomoku against human players. Designed in Fusion 360 and 3D printed. Uses computer vision to extract board state, a CNN trained on Gomoku datasets enhanced with Monte-Carlo tree search for move calculation, and inverse kinematics for robot manipulation.',
+    technologies: ['Python', 'PyTorch', 'ROS', 'Arduino', 'Fusion 360', 'Computer Vision'],
+    github: '',
+    demo: '',
+    featured: true
+  }
+]
+
+export const SKILLS = {
+  'Languages': [
+    'TypeScript',
+    'JavaScript',
+    'Python',
+    'Rust',
+    'Java',
+    'C++'
+  ],
+  'Frontend': [
+    'React',
+    'Next.js',
+    'Three.js',
+    'React Three Fiber',
+    'HTML/CSS'
+  ],
+  'Backend': [
+    'Node.js',
+    '.NET',
+    'Express',
+    'gRPC',
+    'WebSockets'
+  ],
+  'Cloud & DevOps': [
+    'AWS (DynamoDB, Cognito, S3)',
+    'Google Cloud Platform',
+    'Docker',
+    'Nginx',
+    'Vercel'
+  ],
+  'Databases': [
+    'SQL',
+    'DynamoDB',
+    'PostgreSQL'
+  ],
+  'Tools & Other': [
+    'Git',
+    'Webpack',
+    'RabbitMQ',
+    'OpenAI API',
+    'Tauri',
+    'Electron',
+    'ROS'
+  ],
+  'Robotics & AI': [
+    'PyTorch',
+    'Computer Vision',
+    'Robot Kinematics',
+    'Arduino',
+    'Fusion 360'
+  ]
+}
+
+export const EXPERIENCE = [
+  {
+    company: 'Spotify',
+    role: 'Software Engineer',
+    period: 'July 2022 - Present',
+    location: 'London, UK',
+    description: [
+      'Led the development of an all-in-one case resolution platform for customer support',
+      'Worked directly with customer support agents to drive customer-focused features',
+      'Modernised and standardised legacy systems, improving performance and reliability',
+      'Built robust internal test frameworks and improved observability'
+    ],
+    technologies: ['TypeScript', 'Node', 'React', 'Next.js', 'Google Cloud Platform', 'SQL']
+  },
+  {
+    company: 'Spotify',
+    role: 'Senior Software Engineer (Secondment)',
+    period: 'November 2024 - March 2025',
+    location: 'London, UK',
+    description: [
+      'Responsible for development of author pages in desktop and web',
+      'Optimised loading time through lazy loading, chunk splitting, and image optimisation'
+    ],
+    technologies: ['TypeScript', 'React', 'Webpack', 'Next.js']
+  },
+  {
+    company: 'Stratasys/GrabCAD',
+    role: 'Software Engineer & Scrum Master',
+    period: 'March 2021 - July 2022',
+    location: 'Cambridge, UK',
+    description: [
+      'Developer on GrabCAD Print, a CAM desktop app for 3D printing workflows',
+      'Contributed to major features including part labeling and graphics viewer modernisation',
+      'Scrum master from September 2021'
+    ],
+    technologies: ['React', 'Three.js', 'React Three Fiber', 'TypeScript', 'C++', 'Electron']
+  }
+]
+
+export const EDUCATION = [
+  {
+    institution: 'University of Birmingham',
+    degree: 'Robotics MSc',
+    grade: 'Distinction with Honours (84%)',
+    period: '2019-2020'
+  },
+  {
+    institution: 'University of Birmingham',
+    degree: 'Physics BSc',
+    grade: 'First-Class Honours (78%)',
+    period: '2016-2019'
+  }
+]
+
+// Subdomain project links - to be added later
+export const SUBDOMAINS = [
+  // Example: { name: 'Blog', url: 'https://blog.georgesheppard.dev', description: 'Technical writing and thoughts' }
+]

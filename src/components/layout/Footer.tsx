@@ -1,3 +1,4 @@
+import { SOCIAL_LINKS, PERSONAL_INFO } from '../../utils/constants'
 import './Footer.css'
 
 function Footer() {
@@ -8,28 +9,21 @@ function Footer() {
       <div className="container">
         <div className="footer-content">
           <p className="footer-text">
-            &copy; {currentYear} George Sheppard. All rights reserved.
+            &copy; {currentYear} {PERSONAL_INFO.name}. All rights reserved.
           </p>
           <div className="social-links">
-            {/* Social links will be populated from constants in Phase 3 */}
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-link animated-link"
-              aria-label="GitHub"
-            >
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-link animated-link"
-              aria-label="LinkedIn"
-            >
-              LinkedIn
-            </a>
+            {SOCIAL_LINKS.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link animated-link"
+                aria-label={link.name}
+              >
+                {link.name}
+              </a>
+            ))}
           </div>
         </div>
       </div>
