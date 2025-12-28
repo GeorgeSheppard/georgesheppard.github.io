@@ -1,30 +1,15 @@
-import { SOCIAL_LINKS, PERSONAL_INFO } from '../../utils/constants'
-import './Footer.css'
+import { PERSONAL_INFO } from '../../utils/constants'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          <p className="footer-text">
+    <footer className="mt-auto pt-24 pb-16">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="flex justify-between items-center flex-wrap gap-4">
+          <p className="text-text-secondary text-xs font-light">
             {currentYear} {PERSONAL_INFO.name}
           </p>
-          <div className="social-links">
-            {SOCIAL_LINKS.map((link) => (
-              <a
-                key={link.name}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="social-link animated-link"
-                aria-label={link.name}
-              >
-                {link.name}
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </footer>

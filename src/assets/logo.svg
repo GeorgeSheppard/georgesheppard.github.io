@@ -1,0 +1,6 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Minimalist geometric logo combining GS initials with code brackets -->
+  <path d="M8 6 L6 8 L6 24 L8 26" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24 6 L26 8 L26 24 L24 26" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="16" cy="16" r="3" fill="#ffffff"/>
+</svg>

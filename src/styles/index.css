@@ -1,145 +1,90 @@
-/* Theme Variables */
-:root {
-  --bg-primary: #16191b;
-  --bg-secondary: #181818;
-  --text-primary: #ffffff;
-  --text-secondary: #888888;
-  --accent: #ffffff;
-  --accent-hover: #cccccc;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  /* Spacing */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 2rem;
-  --spacing-lg: 4rem;
-  --spacing-xl: 6rem;
-
-  /* Typography */
-  --font-size-base: 0.85rem;
-  --font-size-lg: 1rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.75rem;
-  --font-size-3xl: 2.5rem;
-
-  --line-height-tight: 1.2;
-  --line-height-normal: 1.5;
-  --line-height-loose: 1.8;
-
-  /* Animation */
-  --transition-speed: 0.3s;
-  --transition-ease: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Reset & Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, 'Inter', 'SF Pro Display', 'Segoe UI',
-    'Helvetica Neue', Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 300;
-
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  line-height: var(--line-height-normal);
-}
-
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-  line-height: var(--line-height-tight);
-  font-weight: 400;
-  color: var(--text-primary);
-}
-
-h1 {
-  font-size: var(--font-size-3xl);
-}
-
-h2 {
-  font-size: var(--font-size-2xl);
-}
-
-h3 {
-  font-size: var(--font-size-xl);
-}
-
-p {
-  line-height: var(--line-height-loose);
-  color: var(--text-secondary);
-}
-
-/* Links */
-a {
-  color: var(--accent);
-  text-decoration: none;
-  transition: color var(--transition-speed) var(--transition-ease);
-}
-
-a:hover {
-  color: var(--accent-hover);
-}
-
-/* Code */
-code {
-  font-family: 'Courier New', monospace;
-  background-color: var(--bg-secondary);
-  padding: 0.2rem 0.4rem;
-  border-radius: 4px;
-  font-size: 0.9em;
-}
-
-/* Layout */
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Utility Classes */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-}
-
-.container-narrow {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  :root {
-    --font-size-3xl: 2rem;
-    --font-size-2xl: 1.5rem;
-    --font-size-xl: 1.125rem;
-    --spacing-lg: 3rem;
-    --spacing-xl: 4rem;
+/* Custom base styles */
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
   }
 
-  .container,
-  .container-narrow {
-    padding: 0 var(--spacing-sm);
+  html {
+    @apply text-sm;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-mono font-light bg-bg-primary text-text-primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-normal text-text-primary;
+    line-height: 1.2;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  a {
+    @apply text-text-primary no-underline transition-colors duration-300;
+  }
+
+  a:hover {
+    @apply text-text-secondary;
   }
 }
 
-@media (max-width: 480px) {
-  :root {
-    --font-size-3xl: 1.75rem;
-    --font-size-2xl: 1.25rem;
-    --font-size-xl: 1rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
+/* Animation utilities */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

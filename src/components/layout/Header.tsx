@@ -1,27 +1,13 @@
 import { Link } from 'react-router-dom'
-import './Header.css'
 
 function Header() {
   return (
-    <header className="header animate-fade-in-down">
-      <div className="container">
-        <nav className="nav">
-          <Link to="/" className="logo animated-link">
+    <header className="sticky top-0 z-[100] bg-bg-primary backdrop-blur-[20px] py-8">
+      <div className="max-w-7xl mx-auto px-8">
+        <nav className="flex justify-between items-center">
+          <Link to="/" className="flex items-center">
             GS
           </Link>
-          <ul className="nav-links">
-            <li>
-              <Link to="/" className="nav-link animated-link">
-                GitHub
-              </Link>
-            </li>
-            <li>
-              <Link to="/" className="nav-link animated-link">
-                LinkedIn
-              </Link>
-            </li>
-            {/* Dissertation link will be added later */}
-          </ul>
         </nav>
       </div>
     </header>

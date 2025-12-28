@@ -1,31 +1,25 @@
-// All site content - single source of truth
-
 export const PERSONAL_INFO = {
   name: 'George Sheppard',
-  title: 'Software Engineer',
-  company: 'Spotify',
-  location: 'London, UK',
-  email: 'georgesheppard98@gmail.com',
-  phone: '+447956731633',
   bio: [
-    "I'm George Sheppard, a software engineer from London. I am heavy on TypeScript, knowledgeable on Python, and like to build across the full stack (hardware included). I'm currently at Spotify."]
+    "I'm George Sheppard, a software engineer from London. I am heavy on TypeScript, knowledgeable on Python, and like to build across the full stack (hardware included). Currently at Spotify."]
 }
 
 export const SOCIAL_LINKS = [
   {
-    name: 'GitHub',
+    name: 'Github',
     url: 'https://github.com/GeorgeSheppard',
-    icon: 'github'
   },
   {
     name: 'LinkedIn',
     url: 'https://linkedin.com/in/georgesheppard/',
-    icon: 'linkedin'
   },
   {
     name: 'Email',
-    url: 'mailto:georgesheppard98@gmail.com',
-    icon: 'email'
+    url: 'mailto:me@georgesheppard.dev',
+  },
+  {
+    name: 'Phone',
+    url: 'tel:+447956731633'
   }
 ]
 
@@ -36,8 +30,9 @@ export const PROJECTS = [
     description: 'A website that takes a picture of your bookshelf (a "Shelfie") and recommends new books based on what you already own. This self-hosted project combines computer vision with AI to provide personalized reading suggestions.',
     technologies: ['Docker', 'Nginx', 'TypeScript', '.NET', 'SQL', 'RabbitMQ', 'Python', 'OpenAI'],
     github: '',
-    demo: '',
-    featured: true
+    demo: 'https://shelfie.georgesheppard.dev',
+    featured: true,
+    year: 2025
   },
   {
     id: 'quick-ai',
@@ -45,8 +40,9 @@ export const PROJECTS = [
     description: 'A desktop client for interacting with AI models. Quick AI is accessible via OS shortcut and allows users to quickly interact with their favourite foundation models across text, image, and audio. Provider agnostic design enables unified access to any AI provider.',
     technologies: ['Rust', 'TypeScript', 'Tauri', 'OpenAI', 'Desktop'],
     github: '',
-    demo: '',
-    featured: true
+    demo: 'https://quickai.georgesheppard.dev',
+    featured: true,
+    year: 2023
   },
   {
     id: 'kitchen-calm',
@@ -54,17 +50,19 @@ export const PROJECTS = [
     description: 'A recipe management website that helps anyone keep organised in the kitchen. Features include meal planning, shopping list creation, AI-powered recipe upload, and shareable recipes.',
     technologies: ['AWS DynamoDB', 'AWS Cognito', 'AWS S3', 'TypeScript', 'OpenAI', 'Vercel', 'React'],
     github: '',
-    demo: '',
-    featured: true
+    demo: 'https://kitchencalm.georgesheppard.dev',
+    featured: true,
+    year: 2022
   },
   {
     id: 'gomoku-robot',
-    title: 'Gomoku Playing Robot (MSc Dissertation)',
+    title: 'Gomoku Robot',
     description: 'A SCARA-style robotic arm that plays the board game Gomoku against human players. Designed in Fusion 360 and 3D printed. Uses computer vision to extract board state, a CNN trained on Gomoku datasets enhanced with Monte-Carlo tree search for move calculation, and inverse kinematics for robot manipulation.',
     technologies: ['Python', 'PyTorch', 'ROS', 'Arduino', 'Fusion 360', 'Computer Vision'],
     github: '',
     demo: '',
-    featured: true
+    featured: true,
+    year: 2020
   }
 ]
 
