@@ -2,19 +2,40 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card-content {
+  flex-grow: 1;
 }
 
 .project-title {
   color: var(--text-primary);
   margin-bottom: var(--spacing-sm);
   font-size: var(--font-size-xl);
+  transition: color 0.3s ease;
 }
 
 .project-description {
   color: var(--text-secondary);
-  margin-bottom: var(--spacing-md);
-  flex-grow: 1;
   line-height: var(--line-height-loose);
+  margin-bottom: var(--spacing-md);
+}
+
+.project-description-short {
+  display: block;
+}
+
+.project-description-full {
+  display: none;
+}
+
+.project-expanded-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease, margin-top 0.3s ease;
 }
 
 .project-technologies {
@@ -37,6 +58,7 @@
 .project-links {
   display: flex;
   gap: var(--spacing-md);
+  margin-top: auto;
 }
 
 .project-link {
@@ -44,7 +66,56 @@
   font-size: var(--font-size-base);
 }
 
+/* Desktop hover effects */
+@media (min-width: 769px) {
+  .project-card {
+    cursor: default;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .project-card:hover .project-title {
+    color: var(--accent);
+  }
+
+  .project-card:hover .project-description-short {
+    display: none;
+  }
+
+  .project-card:hover .project-description-full {
+    display: block;
+  }
+
+  .project-card:hover .project-expanded-content {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: var(--spacing-sm);
+  }
+}
+
+/* Mobile tap-to-expand */
 @media (max-width: 768px) {
+  .project-card.expanded .project-description-short {
+    display: none;
+  }
+
+  .project-card.expanded .project-description-full {
+    display: block;
+  }
+
+  .project-card.expanded .project-expanded-content {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: var(--spacing-sm);
+  }
+
+  .project-card.expanded .project-title {
+    color: var(--accent);
+  }
+
   .project-title {
     font-size: var(--font-size-lg);
   }
