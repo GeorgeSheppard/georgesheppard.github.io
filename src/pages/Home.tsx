@@ -1,16 +1,12 @@
-import Hero from '../components/home/Hero'
-import ProjectsSection from '../components/home/ProjectsSection'
-import SkillsSection from '../components/home/SkillsSection'
-import ContactSection from '../components/home/ContactSection'
+import MinimalHero from '../components/home/MinimalHero'
+import MinimalProjects from '../components/home/MinimalProjects'
 import './Home.css'
 
 function Home() {
   return (
     <div className="home">
-      <Hero />
-      <ProjectsSection />
-      <SkillsSection />
-      <ContactSection />
+      <MinimalHero />
+      <MinimalProjects />
     </div>
   )
 }

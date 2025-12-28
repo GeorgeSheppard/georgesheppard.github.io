@@ -2,10 +2,10 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(10, 10, 10, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: var(--spacing-sm) 0;
+  background-color: var(--bg-primary);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: var(--spacing-md) 0;
 }
 
 .nav {
@@ -15,10 +15,10 @@
 }
 
 .logo {
-  font-size: var(--font-size-xl);
-  font-weight: 700;
+  font-size: var(--font-size-base);
+  font-weight: 400;
   color: var(--text-primary);
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 
 .nav-links {
@@ -30,8 +30,8 @@
 
 .nav-link {
   color: var(--text-secondary);
-  font-size: var(--font-size-base);
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 300;
 }
 
 .nav-link:hover {
@@ -44,10 +44,10 @@
   }
 
   .logo {
-    font-size: var(--font-size-lg);
+    font-size: 0.85rem;
   }
 
   .nav-link {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }

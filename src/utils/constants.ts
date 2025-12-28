@@ -8,9 +8,7 @@ export const PERSONAL_INFO = {
   email: 'georgesheppard98@gmail.com',
   phone: '+447956731633',
   bio: [
-    'Software Engineer at Spotify with a passion for building intuitive user experiences and robust systems. I specialize in full-stack development with TypeScript, React, and Node.js.',
-    'I hold an MSc in Robotics from the University of Birmingham (84%, distinction with honours), where I designed and built a SCARA robotic arm that plays Gomoku using computer vision and AI. My background in Physics (BSc, first-class honours) gives me a strong foundation in problem-solving and analytical thinking.'
-  ]
+    "I'm George Sheppard, a software engineer from London. I am heavy on TypeScript, knowledgeable on Python, and like to build across the full stack (hardware included). I'm currently at Spotify."]
 }
 
 export const SOCIAL_LINKS = [

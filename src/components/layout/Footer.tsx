@@ -9,7 +9,7 @@ function Footer() {
       <div className="container">
         <div className="footer-content">
           <p className="footer-text">
-            &copy; {currentYear} {PERSONAL_INFO.name}. All rights reserved.
+            {currentYear} {PERSONAL_INFO.name}
           </p>
           <div className="social-links">
             {SOCIAL_LINKS.map((link) => (

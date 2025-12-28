@@ -12,7 +12,12 @@ function Header() {
           <ul className="nav-links">
             <li>
               <Link to="/" className="nav-link animated-link">
-                Home
+                GitHub
+              </Link>
+            </li>
+            <li>
+              <Link to="/" className="nav-link animated-link">
+                LinkedIn
               </Link>
             </li>
             {/* Dissertation link will be added later */}
