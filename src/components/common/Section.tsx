@@ -1,12 +1,16 @@
-import { SectionTitle } from "./SectionTitle"
+import { SectionTitle } from "./SectionTitle";
 
-export const Section = ({ title, children }: React.PropsWithChildren<{ title: string }>) => {
-  return     <section className="py-8">
+export const Section = ({
+  title,
+  children,
+}: React.PropsWithChildren<{ title: string }>) => {
+  return (
+    <section className="py-8">
+      <div className="flex flex-col gap-3 max-w-7xl mx-auto px-8">
+        <SectionTitle title={title} />
 
-    <div className="flex flex-col gap-3 max-w-7xl mx-auto px-8">
-                  <SectionTitle title={title} />
-      
-        {children}
+        <div className="relative min-h-[6rem] leading-relaxed">{children}</div>
       </div>
-  </section>
-}
+    </section>
+  );
+};

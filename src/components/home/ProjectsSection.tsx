@@ -7,7 +7,7 @@ function ProjectsSection() {
   const { ref, isVisible } = useIntersectionObserver({ threshold: 0.1 })
 
   return (
-    <section className="projects-section" ref={ref as any}>
+    <section className="projects-section" ref={ref}>
       <div className="container">
         <h2 className={`section-title ${isVisible ? 'animate-fade-in-up' : 'animate-on-scroll'}`}>
           Projects
