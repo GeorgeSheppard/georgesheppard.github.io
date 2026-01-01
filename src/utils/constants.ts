@@ -60,9 +60,9 @@ export const PROJECTS = [
     description: 'A SCARA-style robotic arm that plays the board game Gomoku against human players. Designed in Fusion 360 and 3D printed. Uses computer vision to extract board state, a CNN trained on Gomoku datasets enhanced with Monte-Carlo tree search for move calculation, and inverse kinematics for robot manipulation.',
     technologies: ['Python', 'PyTorch', 'ROS', 'Arduino', 'Fusion 360', 'Computer Vision'],
     github: '',
-    demo: '',
+    demo: 'https://drive.google.com/file/d/190MKQxwawIFvGaJYWV9UFrrRD7r8HeUL/view?usp=sharing',
     featured: true,
-    year: 2020
+    year: 2020,
   }
 ]
 
