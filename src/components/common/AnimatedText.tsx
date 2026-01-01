@@ -7,7 +7,7 @@ interface AnimatedTextProps extends HTMLAttributes<HTMLElement> {
   delay?: number
 }
 
-function AnimatedText({
+export function AnimatedText({
   children,
   as: Component = 'div',
   animation = 'fade-in',
@@ -25,5 +25,3 @@ function AnimatedText({
     </Component>
   )
 }
-
-export default AnimatedText

@@ -1,4 +1,4 @@
-import AnimatedText from "../components/common/AnimatedText"
+import { AnimatedText } from "../components/common/AnimatedText"
 import { Section } from "../components/common/Section"
 import { Contact } from "../components/home/Contact"
 import { Hero } from "../components/home/Hero"

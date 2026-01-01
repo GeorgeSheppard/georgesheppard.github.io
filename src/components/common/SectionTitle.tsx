@@ -1,4 +1,4 @@
-import AnimatedText from "./AnimatedText"
+import { AnimatedText } from "./AnimatedText"
 
 export const SectionTitle = ({ title }: { title: string }) => {
   return <AnimatedText

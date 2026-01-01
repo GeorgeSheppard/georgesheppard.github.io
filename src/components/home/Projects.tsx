@@ -3,17 +3,22 @@ import { PROJECTS } from "../../utils/constants";
 import { Section } from "../common/Section";
 
 export function Projects() {
-  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [expandedId, setExpandedId] = useState<Set<string>>(new Set());
 
   const toggleExpanded = (id: string) => {
-    setExpandedId(expandedId === id ? null : id);
+    setExpandedId(prev => {
+      const curr = new Set(prev)
+      if (curr.has(id)) curr.delete(id)
+      else curr.add(id)
+      return curr
+    })
   };
 
   return (
     <Section title="projects">
       <div className="flex flex-col gap-3">
         {PROJECTS.map((project) => {
-          const isExpanded = expandedId === project.id;
+          const isExpanded = expandedId.has(project.id);
           return (
             <div
               key={project.id}
