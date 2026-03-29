@@ -1,7 +1,7 @@
 export const PERSONAL_INFO = {
   name: 'George Sheppard',
   bio: [
-    "I'm George Sheppard, a software engineer from London. I am heavy on TypeScript, knowledgeable on Python, and like to build across the full stack (hardware included). Currently at Spotify."]
+    "I'm George Sheppard, a software engineer from London. I am heavy on TypeScript, knowledgeable on Python, and like to build across the full stack (hardware included). Currently at Encord."]
 }
 
 export const SOCIAL_LINKS = [
@@ -121,9 +121,19 @@ export const SKILLS = {
 
 export const EXPERIENCE = [
   {
+    company: 'Encord',
+    role: 'Software Engineer',
+    period: 'March 2025 - Present',
+    location: 'London, UK',
+    description: [
+      'Building out the data layer for autonomous vehicles and robotics'
+    ],
+    technologies: ['TypeScript', 'Python']
+  },
+  {
     company: 'Spotify',
     role: 'Software Engineer',
-    period: 'July 2022 - Present',
+    period: 'July 2022 - March 2025',
     location: 'London, UK',
     description: [
       'Led the development of an all-in-one case resolution platform for customer support',
