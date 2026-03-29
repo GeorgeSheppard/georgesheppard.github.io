@@ -25,6 +25,16 @@ export const SOCIAL_LINKS = [
 
 export const PROJECTS = [
   {
+    id: 'api-monolith',
+    title: 'api.georgesheppard.dev',
+    description: 'A TypeScript monolith backend serving as the API layer for all my websites, along with an MCP server. Built on Hono with OpenTelemetry observability, Drizzle ORM over PostgreSQL, RabbitMQ messaging, and AWS S3/DynamoDB storage.',
+    technologies: ['TypeScript', 'Hono', 'Node.js', 'MCP', 'PostgreSQL', 'RabbitMQ', 'AWS', 'OpenTelemetry', 'OpenAI'],
+    github: 'https://github.com/GeorgeSheppard/api.georgesheppard.dev',
+    demo: '',
+    featured: true,
+    year: 2025
+  },
+  {
     id: 'shelfie',
     title: 'Shelfie',
     description: 'A website that takes a picture of your bookshelf (a "Shelfie") and recommends new books based on what you already own. This self-hosted project combines computer vision with AI to provide personalized reading suggestions.',
