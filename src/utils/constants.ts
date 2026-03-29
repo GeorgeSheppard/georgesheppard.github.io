@@ -57,9 +57,9 @@ export const PROJECTS = [
   {
     id: 'api-monolith',
     title: 'API Monolith',
-    description: 'A TypeScript monolith backend serving as the API layer for all my websites, along with an MCP server. Hosted at api.georgesheppard.dev.',
-    technologies: ['TypeScript', 'Node.js', 'MCP'],
-    github: '',
+    description: 'A TypeScript monolith backend serving as the API layer for all my websites, along with an MCP server. Built on Hono with OpenTelemetry observability, Drizzle ORM over PostgreSQL, RabbitMQ messaging, and AWS S3/DynamoDB storage.',
+    technologies: ['TypeScript', 'Hono', 'Node.js', 'MCP', 'PostgreSQL', 'RabbitMQ', 'AWS', 'OpenTelemetry', 'OpenAI'],
+    github: 'https://github.com/GeorgeSheppard/api.georgesheppard.dev',
     demo: '',
     featured: true,
     year: 2025
