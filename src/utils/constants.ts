@@ -55,6 +55,16 @@ export const PROJECTS = [
     year: 2022
   },
   {
+    id: 'api-monolith',
+    title: 'API Monolith',
+    description: 'A TypeScript monolith backend serving as the API layer for all my websites, along with an MCP server. Hosted at api.georgesheppard.dev.',
+    technologies: ['TypeScript', 'Node.js', 'MCP'],
+    github: '',
+    demo: '',
+    featured: true,
+    year: 2025
+  },
+  {
     id: 'gomoku-robot',
     title: 'Gomoku Robot',
     description: 'A SCARA-style robotic arm that plays the board game Gomoku against human players. Designed in Fusion 360 and 3D printed. Uses computer vision to extract board state, a CNN trained on Gomoku datasets enhanced with Monte-Carlo tree search for move calculation, and inverse kinematics for robot manipulation.',
