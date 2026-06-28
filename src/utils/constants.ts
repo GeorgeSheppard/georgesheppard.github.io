@@ -32,7 +32,7 @@ export const PROJECTS = [
     github: 'https://github.com/GeorgeSheppard/api.georgesheppard.dev',
     demo: '',
     featured: true,
-    year: 2025
+    year: '2025 — 2026'
   },
   {
     id: 'shelfie',
