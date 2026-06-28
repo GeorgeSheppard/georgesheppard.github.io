@@ -39,10 +39,10 @@ export const PROJECTS = [
     title: 'Shelfie',
     description: 'A website that takes a picture of your bookshelf (a "Shelfie") and recommends new books based on what you already own. This self-hosted project combines computer vision with AI to provide personalized reading suggestions.',
     technologies: ['Docker', 'Nginx', 'TypeScript', '.NET', 'SQL', 'RabbitMQ', 'Python', 'OpenAI'],
-    github: '',
+    github: 'https://github.com/GeorgeSheppard/Shelfie',
     demo: 'https://shelfie.georgesheppard.dev',
     featured: true,
-    year: 2025
+    year: '2025 — 2026'
   },
   {
     id: 'quick-ai',
@@ -55,14 +55,14 @@ export const PROJECTS = [
     year: 2023
   },
   {
-    id: 'kitchen-calm',
-    title: 'Kitchen Calm',
+    id: 'mise',
+    title: 'Mise',
     description: 'A recipe management website that helps anyone keep organised in the kitchen. Features include meal planning, shopping list creation, AI-powered recipe upload, and shareable recipes.',
     technologies: ['AWS DynamoDB', 'AWS Cognito', 'AWS S3', 'TypeScript', 'OpenAI', 'Vercel', 'React'],
-    github: '',
-    demo: 'https://kitchencalm.georgesheppard.dev',
+    github: 'https://github.com/GeorgeSheppard/Mise',
+    demo: 'https://mise.georgesheppard.dev',
     featured: true,
-    year: 2022
+    year: '2022 — 2026'
   },
   {
     id: 'gomoku-robot',
