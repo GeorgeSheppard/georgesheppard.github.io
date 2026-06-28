@@ -29,10 +29,10 @@ export function Projects() {
               <div className="flex flex-col">
                 {/* Title row */}
                 <div className="flex items-baseline gap-3 cursor-pointer">
-                  <span className="index text-md text-text-secondary opacity-50 transition-opacity duration-500 group-hover:opacity-100">
+                  <span className="index text-md text-text-secondary opacity-50 transition-opacity duration-500 group-hover:opacity-100 relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:right-0 after:h-[1.5px] after:bg-text-secondary after:transition-opacity after:duration-500 group-hover:after:opacity-0">
                     {project.year}
                   </span>
-                  <span className="title text-md text-text-primary font-light tracking-tight relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-[2.5rem] after:bg-text-secondary after:-translate-x-[calc(2.5rem+0.75rem)] after:transition-all after:duration-500 after:ease-out group-hover:after:translate-x-0 group-hover:after:w-full group-hover:after:bg-text-primary">
+                  <span className="title text-md text-text-primary font-light tracking-tight relative after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:h-[1.5px] after:w-0 after:bg-text-primary after:transition-all after:duration-500 after:ease-out group-hover:after:w-full">
                     {project.title}
                   </span>
                 </div>
