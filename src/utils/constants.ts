@@ -25,6 +25,16 @@ export const SOCIAL_LINKS = [
 
 export const PROJECTS = [
   {
+    id: 'tfl-tracking',
+    title: 'tfl.georgesheppard.dev',
+    description: 'A real-time London Underground tracking application for monitoring tube times and disruptions. Provides live updates on line status, delays, and travel information for the TfL network.',
+    technologies: ['TypeScript', 'React', 'TfL API'],
+    github: '',
+    demo: 'https://tfl.georgesheppard.dev',
+    featured: true,
+    year: 2026
+  },
+  {
     id: 'api-monolith',
     title: 'api.georgesheppard.dev',
     description: 'A TypeScript monolith backend serving as the API layer for all my websites, along with an MCP server. Built on Hono with OpenTelemetry observability, Drizzle ORM over PostgreSQL, RabbitMQ messaging, and AWS S3/DynamoDB storage.',
