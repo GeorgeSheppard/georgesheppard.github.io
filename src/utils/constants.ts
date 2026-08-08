@@ -25,12 +25,12 @@ export const SOCIAL_LINKS = [
 
 export const PROJECTS = [
   {
-    id: 'tfl-tracking',
-    title: 'tfl.georgesheppard.dev',
+    id: 'platform',
+    title: 'Platform',
     description: 'A real-time London Underground tracking application for monitoring tube times and disruptions. Provides live updates on line status, delays, and travel information for the TfL network.',
     technologies: ['TypeScript', 'React', 'TfL API'],
-    github: '',
-    demo: 'https://tfl.georgesheppard.dev',
+    github: 'https://github.com/GeorgeSheppard/platform',
+    demo: 'https://platform.georgesheppard.dev',
     featured: true,
     year: 2026
   },
