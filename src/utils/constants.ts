@@ -25,6 +25,16 @@ export const SOCIAL_LINKS = [
 
 export const PROJECTS = [
   {
+    id: 'flights',
+    title: 'Flights',
+    description: 'A mobile-first live flight tracker. Pan and zoom the map to see aircraft in real time, tap a plane for its details and recent trajectory, search by flight number for recent and upcoming flights, and drop pins to save favourite places.',
+    technologies: ['TypeScript', 'React', 'MapLibre', 'OpenSky', 'FlightAware', 'Cloudflare Workers'],
+    github: 'https://github.com/GeorgeSheppard/flights',
+    demo: 'https://flights.georgesheppard.dev',
+    featured: true,
+    year: 2026
+  },
+  {
     id: 'platform',
     title: 'Platform',
     description: 'A real-time London Underground tracking application for monitoring tube times and disruptions. Provides live updates on line status, delays, and travel information for the TfL network.',
