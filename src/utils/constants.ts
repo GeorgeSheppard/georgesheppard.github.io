@@ -25,6 +25,16 @@ export const SOCIAL_LINKS = [
 
 export const PROJECTS = [
   {
+    id: 'pedestrians',
+    title: 'Pedestrians',
+    description: 'A tilt-shift 3D model of the junction outside Covent Garden tube station, where little pedestrians walk, shop and queue through the station by simple rules while cabs and vans share Long Acre. Built from OpenStreetMap data and photos of the real buildings, with adjustable crowd, traffic and weather.',
+    technologies: ['TypeScript', 'React', 'Three.js', 'React Three Fiber', 'OpenStreetMap', 'Cloudflare Workers'],
+    github: 'https://github.com/GeorgeSheppard/pedestrian-simulator',
+    demo: 'https://pedestrians.georgesheppard.dev',
+    featured: true,
+    year: 2026
+  },
+  {
     id: 'flights',
     title: 'Flights',
     description: 'A mobile-first live flight tracker. Pan and zoom the map to see aircraft in real time, tap a plane for its details and recent trajectory, search by flight number for recent and upcoming flights, and drop pins to save favourite places.',
