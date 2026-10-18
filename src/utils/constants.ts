@@ -29,8 +29,8 @@ export const PROJECTS = [
     title: 'Ledger',
     description: 'A personal finance app with no backend: sign in with Google and your data lives in your own Google Sheet, read and written straight from the browser. Includes a demo mode on sample data, and can also open a ledger from a file on your device.',
     technologies: ['TypeScript', 'React', 'Google Sheets API', 'Google Drive Picker', 'IndexedDB', 'Cloudflare Workers'],
-    github: 'https://github.com/GeorgeSheppard/finance',
-    demo: 'https://finance.georgesheppard.dev',
+    github: 'https://github.com/GeorgeSheppard/ledger',
+    demo: 'https://ledger.georgesheppard.dev',
     featured: true,
     year: 2026
   },
