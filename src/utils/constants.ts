@@ -25,6 +25,16 @@ export const SOCIAL_LINKS = [
 
 export const PROJECTS = [
   {
+    id: 'ledger',
+    title: 'Ledger',
+    description: 'A personal finance app with no backend: sign in with Google and your data lives in your own Google Sheet, read and written straight from the browser. Includes a demo mode on sample data, and can also open a ledger from a file on your device.',
+    technologies: ['TypeScript', 'React', 'Google Sheets API', 'Google Drive Picker', 'IndexedDB', 'Cloudflare Workers'],
+    github: 'https://github.com/GeorgeSheppard/ledger',
+    demo: 'https://ledger.georgesheppard.dev',
+    featured: true,
+    year: 2026
+  },
+  {
     id: 'pedestrians',
     title: 'Pedestrians',
     description: 'A tilt-shift 3D model of the junction outside Covent Garden tube station, where little pedestrians walk, shop and queue through the station by simple rules while cabs and vans share Long Acre. Built from OpenStreetMap data and photos of the real buildings, with adjustable crowd, traffic and weather.',
